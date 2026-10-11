@@ -1,0 +1,6 @@
+podaci/
+__pycache__/
+*.docx
+*.pdf
+*.zip
+.DS_Store

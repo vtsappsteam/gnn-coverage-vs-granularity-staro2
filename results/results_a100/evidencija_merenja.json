@@ -1,0 +1,55 @@
+{
+  "napomena": "Tacna evidencija uslova merenja, dopunjena 31. jula. Vrednosti koje kod upisuje u sazetak.json ocitane su iz procesa unutar kontejnera, pa za broj jezgara i radnu memoriju pokazuju resurse domacina, a ne kvotu dodeljenu instanci. Merodavna je dodela sa platforme, navedena ovde. Fajlovi sazetak.json u pojedinacnim run folderima su u jednom prolazu prepisani vrednostima poslednje instance, pa za seedove 42 i 123 ne odrazavaju deljenu memoriju pod kojom su Koraci 1 i 2 mereni.",
+  "kartica_svuda": "NVIDIA A100-SXM4-40GB, compute capability 8.0, 43 GB",
+  "jezgara_vidljivo_svuda": 256,
+  "napomena_o_jezgrima": "Dodeljeno je 16 jezgara po instanci. Iz procesa se ocitava 256, sto je broj jezgara domacina. Domacin je deljen, pa merenja vremena imaju devijaciju do 37 odsto, dok memorija na kartici od toga ne zavisi.",
+  "instance": {
+    "A": {
+      "deljena_memorija_gb": 8,
+      "radnih_procesa": 8
+    },
+    "B": {
+      "deljena_memorija_gb": 32,
+      "radnih_procesa": 8
+    }
+  },
+  "poreklo": {
+    "run_42": {
+      "korak1": "instanca A",
+      "korak2": "instanca A",
+      "korak4_B_32_do_2048": "instanca A",
+      "korak4_B_4096": "instanca A, ali sa 2 radna procesa umesto 8"
+    },
+    "run_123": {
+      "korak1": "instanca A",
+      "korak2": "instanca A",
+      "korak4_B_32_do_512": "instanca A",
+      "korak4_B_1024_do_4096": "instanca B"
+    },
+    "run_7": {
+      "korak1": "instanca B",
+      "korak2": "instanca B",
+      "korak4": "instanca B"
+    }
+  },
+  "zasto_je_to_prihvatljivo": [
+    "Tacnost ne zavisi od konfiguracije instance, samo od seeda, podataka, modela i hiperparametara.",
+    "Memorija na kartici je izmerena sa devijacijom od 0 do 7 MB preko sva tri seeda, dakle potpuno uporediva.",
+    "Broj radnih procesa ne utice na broj ucitanih cvorova, broj potega ni memoriju na kartici, nego samo na brzinu pripreme podataka.",
+    "Vreme ima devijaciju do 37 odsto i unutar iste instance, jer je domacin deljen. Ponovno merenje ne bi dalo cistije vrednosti."
+  ],
+  "dodela_sa_platforme": {
+    "izvor": "konfiguracija JupyterLab instance u Studio okruzenju, instanca NTDS",
+    "gpu": "a100:1",
+    "cpu_dodeljeno": 16,
+    "ram_dodeljeno_gb": 64,
+    "deljena_memorija_gib": 32,
+    "napomena": "Dodela je fiksna po instanci. Domacin je deljen sa drugim korisnicima, pa propusnost varira iako je kvota jezgara nepromenjena."
+  },
+  "ocitano_iz_kontejnera": {
+    "os_cpu_count": 256,
+    "ram_gb": 1082,
+    "deljena_memorija_gb": 34.4,
+    "napomena": "Prve dve vrednosti su resursi domacina i ne opisuju uslove merenja. Deljena memorija je tacna, jer 32 GiB iznosi 34,36 GB."
+  }
+}

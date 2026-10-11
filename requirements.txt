@@ -1,0 +1,7 @@
+torch==2.6.0
+torch_geometric
+ogb
+numpy
+matplotlib
+python-docx
+nvidia-ml-py

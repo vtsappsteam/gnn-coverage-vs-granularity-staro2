@@ -1,0 +1,3 @@
+poredjenje,prosek_pp,std_pp,p,pozitivnih,negativnih
+RNS naspram ClusterGCN osnova K100,-0.9038536715840584,0.3727276247544756,0.001953125,0,10
+RNS naspram izolovano int64 K100,-0.5581959961319272,0.446906802730603,0.0078125,2,8

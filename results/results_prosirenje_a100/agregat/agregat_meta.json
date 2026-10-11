@@ -1,0 +1,8 @@
+{
+  "kartica": "NVIDIA A100-SXM4-40GB",
+  "jezgara": 256,
+  "deljena_memorija_gb": 34.4,
+  "grafova": 4,
+  "merenja_faza1": 216,
+  "merenja_faza2": 60
+}

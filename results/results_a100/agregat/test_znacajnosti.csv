@@ -1,0 +1,10 @@
+naziv,prosek,std,n,p,isti_smer,znacajno
+Dubina: dva naspram tri sloja,1.4979185098313537,0.4287059752596896,10,0.001953125,True,True
+Dubina: tri naspram cetiri sloja,0.4985974802652805,0.40185804739060893,10,0.015625,False,True
+Sirina: veliki naspram malog uzorka,0.1659019676426027,0.24259805176499877,10,0.060546875,False,False
+Sirina: standardni naspram malog uzorka,0.09642751819160936,0.23253790062990962,10,0.2109375,False,False
+Najbolje dve konfiguracije uzorkovanja,0.2604777482871441,0.6095194096228053,10,0.20703125,False,False
+Paradigme pri istoj dubini,0.5003806349402297,0.41063767738193063,10,0.009765625,False,True
+ClusterGCN pri manjoj memoriji,0.054523383330248976,0.6760262443327341,10,0.796875,False,False
+Najbolji GraphSAGE naspram najboljeg ClusterGCN-a,0.606958418204637,0.30648487740915425,10,0.00390625,False,True
+ClusterGCN: sitnije naspram krupnijeg particionisanja,-1.1248276855338133,0.42096818312614337,10,0.001953125,True,True

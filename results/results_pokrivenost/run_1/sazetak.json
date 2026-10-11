@@ -1,0 +1,11 @@
+{
+  "seed": 1,
+  "datum": "2026-07-31T07:13:48.302478",
+  "kartica": "NVIDIA A100-SXM4-40GB",
+  "compute_capability": "8.0",
+  "pokrivenost": 0.2,
+  "koraka": 5000,
+  "slojeva": 3,
+  "skriveni": 256,
+  "lr": 0.01
+}

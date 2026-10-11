@@ -1,0 +1,16 @@
+{
+  "seed": 3,
+  "datum": "2026-07-31T01:45:03.071120",
+  "platforma": "nacionalna platforma za vestacku inteligenciju",
+  "kartica": "NVIDIA A100-SXM4-40GB",
+  "compute_capability": "8.0",
+  "jezgara": 256,
+  "deljena_memorija_gb": 34.4,
+  "graf_neusmeren": true,
+  "epoha_korak1": 50,
+  "batch_korak1": 512,
+  "koraka_korak2": 5000,
+  "batch_klastera": 20,
+  "skriveni": 256,
+  "lr": 0.01
+}
